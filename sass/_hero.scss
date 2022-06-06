@@ -1,0 +1,48 @@
+.hero {
+  margin-top: 140px;
+  margin-bottom: 150px;
+  &__image {
+    max-width: 1280px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: url("../img/hero.jpg") no-repeat center;
+  }
+  &__sub-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+    &::after,&::before{
+      content: '';
+      background-color: #fff;
+      width: 28px;
+      height: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+    }
+    &::after{
+      border-radius: 50px 0;
+      right: -36px;
+    }
+    &::before{
+      border-radius: 0 50px;
+      left: -36px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 8vw;
+    line-height: 140%;
+    color: #fff;
+    max-width: 507px;
+    text-align: center;
+  }
+}

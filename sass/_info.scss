@@ -1,0 +1,43 @@
+$mont: Montserrat;
+
+.info {
+  margin-bottom: 150px;
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 25px;
+    &--top{
+      margin-bottom: 100px;
+    }
+  }
+  &__text {
+    max-width: 466px;
+  }
+  &__text-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  &__desc {
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    font-family: $mont;
+  }
+  &__desc-bottom {
+    margin-top: 20px;
+  }
+  &__iblock {
+    max-width: 526px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+}

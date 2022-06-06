@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import "./header";
+@import "./hero";
+@import "./cards";
+@import "./reviews";
+@import "./info";
+@import "./price";
+@import "./footer";
+
+body {
+  background: #162831;
+  font-family: El Messiri, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  overflow: hidden;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.title {
+  font-weight: 700;
+  font-size: 9vw;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+  &::after,
+  &::before {
+    content: "";
+    background-color: #018abe;
+    width: 28px;
+    height: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  &::after {
+    border-radius: 50px 0;
+    right: 0;
+  }
+  &::before {
+    border-radius: 0 50px;
+    left: 0;
+  }
+}

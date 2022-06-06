@@ -1,0 +1,41 @@
+.reviews {
+  margin-bottom: 150px;
+}
+.swiper {
+  max-width: 900px;
+  height: 350px;
+}
+.swiper-slide {
+  background: #018abe;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+.swiper-pagination-bullet {
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+.slide {
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  &__desc {
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    font-family: Montserrat;
+  }
+  &__desc-bottom{
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,61 @@
+.footer {
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  &__map{
+    width: 100%;
+    height: 100%;
+    &-block{
+      width: 855px;
+      height: 605px;
+    }
+  }
+  &__cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
+  &__card {
+    max-width: 392px;
+    background: #018abe;
+    border-radius: 10px;
+    padding: 35px;
+    &-title {
+      font-weight: 700;
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    margin-bottom: 30px;
+    &-item {
+      font-weight: 400;
+      font-size: 14px;
+      color: #fff;
+      font-family: Montserrat;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  &__btn {
+    font-weight: 600;
+    font-size: 13px;
+    color: #018ABE;
+    background: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 9px 15px;
+    font-family: Montserrat;
+  }
+}
